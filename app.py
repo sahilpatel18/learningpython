@@ -88,3 +88,10 @@
 # jake = Student("Sahil", "Computer Science", 3.68, False)
 
 # print(jake.gpa)
+
+
+question_prompts = [
+    'What color are apples? \n(a) Teal\n(b) Magenta\n(c) Red/Green\n\n',
+    'What color are bananas? \n(a) Orange\n(b) Yellow\n(c) Red\n\n',
+    'What color are strawberries? \n(a) Red\n(b) Blue\n(c) Green\n\n',
+]
