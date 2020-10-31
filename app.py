@@ -42,13 +42,11 @@ else:
     print("YOU WON THE GAME!!")
 
 
-
 def raise_to_power(base, power):
     result = 1
     for i in range(power):
         result = result * power
     return result
-
 
 
 def translator(phrase):
@@ -92,24 +90,27 @@ print(jake.gpa)
 from Question import Question
 
 question_prompts = [
-    'What color are apples? \n(a) Teal\n(b) Magenta\n(c) Red/Green\n\n',
-    'What color are bananas? \n(a) Orange\n(b) Yellow\n(c) Red\n\n',
-    'What color are strawberries? \n(a) Red\n(b) Blue\n(c) Green\n\n',
+    "What color is the sky?\n(a) Blue\n(b) Red\n(c) Purple\n\n",
+    "What color are apples?\n(a) Red\n(b) Blue\n(c) Green\n\n",
+    "What color are bananas?\n(a) Teal\n(b) Yellow\n(c) Black\n\n",
 ]
-
 
 questions = [
-    Question(question_prompts[0], 'c'),
-    Question(question_prompts[1], 'b'),
-    Question(question_prompts[2], 'a')
+    Question(question_prompts[0], 'a'),
+    Question(question_prompts[1], 'a'),
+    Question(question_prompts[2], 'b'),
 ]
+
 
 def run_test(questions):
     score = 0
     for question in questions:
         answer = input(question.prompt)
-        if(answer == question.answer):
+        if answer == question.answer:
             score = score + 1
-    print("hey you got " + str(score) + "/" + str(len(questions)) + ' correct')
+    print('You got ' + str(score) + '/' + str(len(questions)))
+   
 
 run_test(questions)
+
+
